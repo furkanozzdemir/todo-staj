@@ -6,6 +6,10 @@ function App() {
   const [input, setInput] = useState("");
 
   const onclickEvent = (todo) => {
+
+    if (input.length === 0) {
+      return false;
+    }
     const newTodo = {
       id: Math.random(),
       todo: todo,
