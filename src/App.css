@@ -1,38 +1,51 @@
-.App {
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin: 150px 250px;
+  margin-left: 200px;
+}
+.btn {
+  margin-left: 6px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  background-color: #fe6d73;
+}
+.input-box {
+  padding: 5px 35px;
+  border-radius: 14px;
+  margin-left: 80px;
+  border: 3px solid;
+}
+h1 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #17c3b2;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+ul li {
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: #ffcb77;
+  padding-right: 140pxs;
+  padding-top: 1px;
+  position: relative;
+  border: 3px solid;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-delete {
+  position: absolute;
+  right: 0;
+  border-radius: 4px;
+  background-color: #227c9d;
+  margin: auto 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-class {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
